@@ -1,12 +1,12 @@
 html {
-    background-color: #E1DFD3;
+    background-color: #3D998D;
 }
 body {
     font-family: "Lucida Grande", "Arial", sans-serif;
     margin: 1.5em auto;
     padding: 1.5em;
-    background-color: white;
-    color: #4D4B39;
+    background-color: purple;
+    color: #000000;
     max-width: 35em;
     border: 0.75em solid #A6A59C;
     line-height: 1.5em;
@@ -15,14 +15,14 @@ p {
     margin: 1.5em 0;
 }
 h1 {
-    background-color: #4D4B39;
+    background-color: #09B23C;
     color: #E1DFD3;
     font-size: 200%;
     padding: 0.75em;
     margin: -0.75em -0.75em 0.75em -0.75em;
 }
 h2 {
-    background-color: #4D4B39;
+    background-color: #14CC4C;
     color: #88a75d;
     font-size: 150%;
     padding: 1em;
