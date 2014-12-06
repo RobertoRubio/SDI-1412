@@ -6,54 +6,23 @@
 
 //My Variables
 
- var social = "\"Google+\"var";
- 
- 
- 
- //My Procedure
- 
- 
+var social = "Google+";
+var theBest = true;
+var numFriends = 5;
 
 
-
-
-/*//alert("JavaScript works!");
-
-//global variables
-var returnValueVar;
-
-
-//my function
-// returning values on flow chart
-var division = function(firstNumber, secondNumber) {
-    
-    if (secondNumber === 0) {
-        
-        return "can't divide by zero!"
-        
+//Procedure
+var myProcedure = function () {
+    myPrompt = prompt("Which Social Media Website is the best for posting pics?", social);
+    if (myPrompt === social) {
+        console.log("I know I love it too!");
     } else {
-        
-        var outcome = firstNumber / secondNumber;
-        return outcome;
-
+        console.log("I really don't agree with you on that one.");
     }
-    
 };
 
-var myProcedure = function () { // procedures don't have a return value
-    
-    console.log("hello World");
-    
-};
 
-//my main code that calls the function
-myProcedure(); // procedure doesn't have any value saved and carried over only direct output.
+//Main Code
 
-returnValueVar = division(150, 15); // returning values on flow chart
-
-console.log("The answer is " + returnValueVar + ".");
-
-returnValueVar = division(250, returnValueVar);
-
-console.log("The second answer is " + returnValueVar + ".");
-*/
+//Procedure
+myProcedure();
