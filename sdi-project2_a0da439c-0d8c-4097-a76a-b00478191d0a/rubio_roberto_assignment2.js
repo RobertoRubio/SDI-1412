@@ -26,14 +26,17 @@ var ask = function () {
     return myConfirm;
 };
 var returnBoolean = function (myConfirm, theBest) {
+    var movingON;
     if (myConfirm === theBest) {
         console.log("OK OK I think I've made my point.");
     } else {
         while (myConfirm != theBest) {
-        var myConfirm = confirm("Let's try this again. Isn't " + social + " the best?");
+        var myConfirm = confirm ("Let's try this again. Is'nt " + social + " the best?");
         console.log("Just say it is already. Please!");
         }
-    };
+    }
+    movingON = "Let's move on then. Obviously " + social + " being the best is " + myConfirm + ".";
+        return movingON;
 };
 
 
@@ -47,5 +50,6 @@ myProcedure();
 var myConfirm = ask();
 
 //Boolean Function Return
-returnBoolean(myConfirm, theBest);
-console.log("Let's move on then.");
+//var myConfirm = returnBoolean(myConfirm, theBest);
+var getGoing = returnBoolean(myConfirm, theBest);
+console.log(getGoing);
