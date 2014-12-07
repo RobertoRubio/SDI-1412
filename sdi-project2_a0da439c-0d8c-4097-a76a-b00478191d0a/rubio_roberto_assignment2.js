@@ -82,3 +82,6 @@ console.log(finalCount);
 //String Function Return
 var nameAll = otherFriends();
 console.log(nameAll);
+
+//Final Output
+console.log("I think we are all done here. Thanks so much for helping me post and tag this picture to " + social + ". And for helping rember everyone's names.");
