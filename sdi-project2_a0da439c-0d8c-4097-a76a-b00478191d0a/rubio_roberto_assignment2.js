@@ -48,9 +48,18 @@ var taggedFriends = function () {
         var friendsLeft = numFriends - countFriends;
         console.log("I think I see " + friendsLeft + " more friends in this picture.");
     };
-        totalFriends = "Alright we found and tagged all " + numFriends + " of our friends in the photo";
+        totalFriends = "Alright we found and tagged all " + numFriends + " of our friends in the photo!";
         return totalFriends;
 };
+
+
+//String Function
+var otherFriends = function () {
+    var otherFriendsNames = prompt ("Hey what were the other 2 people's names?", "name & name");
+    everyone = "Oh yeah that's right their names are " + otherFriendsNames + ". I almost forgot.";
+    return everyone;
+};
+
 
 
 //Main Code
@@ -69,3 +78,7 @@ console.log(getGoing);
 //Number Function Return
 var finalCount = taggedFriends();
 console.log(finalCount);
+
+//String Function Return
+var nameAll = otherFriends();
+console.log(nameAll);
