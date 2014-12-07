@@ -22,7 +22,7 @@ var myProcedure = function () {
 
 //Confirm and Boolean Function While Loop
 var ask = function () {
-    var myConfirm = confirm("Let's try this again. Isn't " + social + " the best?");
+    var myConfirm = confirm("I couldn't hear you. Isn't " + social + " the best?");
     return myConfirm;
 };
 var returnBoolean = function (myConfirm, theBest) {
@@ -40,6 +40,19 @@ var returnBoolean = function (myConfirm, theBest) {
 };
 
 
+//Number Function
+var taggedFriends = function () {
+    var countFriends = prompt ("How many friends are in the photo? That way I can tag them.", "1-5");
+    countFriends = parseInt(countFriends);
+    for (var countFriends; countFriends < numFriends; countFriends ++){
+        var friendsLeft = numFriends - countFriends;
+        console.log("I think I see " + friendsLeft + " more friends in this picture.");
+    };
+        totalFriends = "Alright we found and tagged all " + numFriends + " of our friends in the photo";
+        return totalFriends;
+};
+
+
 //Main Code
 console.log("I have a bunch of pictures I want to post online and I'd like you to help me out.");
 
@@ -50,6 +63,9 @@ myProcedure();
 var myConfirm = ask();
 
 //Boolean Function Return
-//var myConfirm = returnBoolean(myConfirm, theBest);
 var getGoing = returnBoolean(myConfirm, theBest);
 console.log(getGoing);
+
+//Number Function Return
+var finalCount = taggedFriends();
+console.log(finalCount);
